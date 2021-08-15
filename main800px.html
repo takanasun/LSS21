@@ -1,0 +1,76 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/base800.css">
+    <link rel="stylesheet" href="./css/jquery.simpleTicker.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.simpleTicker.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <script>
+        $(function(){
+            $.simpleTicker($("#ticker-roll"),{'liHeight':'30px','ulWidth':'35px','effectType':'roll'});
+        });
+    </script>
+    <style>
+        div.ticker{width: calc(100% - 20px);}
+    </style>
+</head>
+<body class="w800">
+    <div class="main">
+        <div class="infoCol">
+            <div class="game">
+                <div class="name" id="title"></div>
+                <div class="cateTime">
+                    <div class="category"id="cate"></div>
+                    <div class="est"id="est"></div>
+                </div>
+            </div>
+            <div class="runInfo">
+                <div class="runner">
+                    <div class="name nn" id="runName"></div>
+                    <div class="info">
+                        <div class="icon" id="runIcon"></div>  
+                        <div class="userID" id="runID"></div>  
+                    </div>   
+                </div>
+                <div id="commentator">
+                    <div class="name nn" id="comName"></div>
+                    <div class="info">
+                        <div class="icon" id="comIcon"></div>  
+                        <div class="userID" id="comID"></div>     
+                    </div>
+                </div>    
+    
+            </div>
+        </div>
+        <div class="screenCol">
+            <div class="gia1"></div>
+            <div class="gia2"></div>
+            <div class="gia3"></div>
+            <div class="gia4"></div>
+        </div>
+    </div>
+    <div class="nextGame">
+        <div class="nextGameInfo">
+            <div id="nextTitle"></div>
+            <div id="ticker-roll" class="ticker" >
+                <ul>
+                    <li id="nextRunner"></li>
+                    <li id="nextCommentator"></li>
+                    <li id="nextCategory"></li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
+
+

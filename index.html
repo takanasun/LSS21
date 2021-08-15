@@ -1,0 +1,158 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index -LSS21-</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        function copyTextToClipboard(textVal){
+            var copyFrom = document.createElement("textarea");
+            copyFrom.textContent = location.href.replace("index.html","") + textVal;
+            var bodyElm = document.getElementsByTagName("body")[0];
+            bodyElm.appendChild(copyFrom);
+            copyFrom.select();
+            var retVal = document.execCommand('copy');
+            bodyElm.removeChild(copyFrom);
+            return retVal;
+        }
+
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('.materialboxed').materialbox();
+            $('.tooltipped').tooltip();
+          });
+                
+    </script>
+    
+</head>
+<body class="orange lighten-5">
+    <nav>
+        <div class="nav-wrapper brown darken-3">
+          <a href="#" class="brand-logo" style="margin-left:20px">Long Speedrun Summit 2021</a>
+
+        </div>
+    </nav>   
+    <div class="container " style="z-index:100">
+        <div class="row">
+            <h4>はじめに</h4>
+        </div>
+        <div class="row">
+            <p>この度はLong Speedrun Summit2021にご参加いただきありがとうございます。<br>
+                今回このイベントの為の背景を用意いたしましたので、<br>
+                こちらを利用した配信設定をしていただきますよう、よろしくお願いいたします。</p>
+        </div>
+        <div class="row">
+            <h4>共通背景</h4>
+        </div>
+        <div class="row">
+            <ul>
+                <li><i class="material-icons">av_timer</i>サンプルの確認は"XXXで配信する方向け"と書かれた部分をクリックすると確認できます</li>
+                <li><i class="material-icons">av_timer</i>URL COPYと書かれた部分をクリックするとURLがコピーされます</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col s4 m4">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/bbase_800.png">
+                    </div>
+                    <div class="card-content">
+                        <p><a href="./main800px.html" target="_break">800×600で配信する方向け</a></p>
+                    </div>
+                    <div class="card-action brown darken-3" onclick="copyTextToClipboard('main800px.html');M.toast({html: 'クリップボードに保存されました'})" >
+                        <a onclick="copyTextToClipboard('main800px.html');M.toast({html: 'クリップボードに保存されました'})" class=" white-text">URL Copy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 m4">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/bbase_928.png">
+                    </div>
+                    <div class="card-content">
+                        <p><a href="./main928px.html" target="_break">928×522で配信する方向け</a></p>
+                    </div>
+                    <div class="card-action brown darken-3" onclick="copyTextToClipboard('main928px.html');M.toast({html: 'クリップボードに保存されました'})" >
+                        <a onclick="copyTextToClipboard('main928px.html');M.toast({html: 'クリップボードに保存されました'})" class=" white-text">URL Copy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 m4">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/bbase_ds.png">
+                    </div>
+                    <div class="card-content">
+                        <p><a href="./main_ds.html" target="_break">DSで配信する方向け</a></p>
+                    </div>
+                    <div class="card-action brown darken-3" onclick="copyTextToClipboard('main_ds.html');M.toast({html: 'クリップボードに保存されました'})" >
+                        <a onclick="copyTextToClipboard('main_ds.html');M.toast({html: 'クリップボードに保存されました'})" class=" white-text">URL Copy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h4>OBSでの設定</h4>
+        </div>
+        <div class="row">
+            <div class="col s4 m4">
+                <img src="img/obs1.png" data-caption="OBS画面中央下部のソース部分のプラスボタンを押下" alt="obs1" srcset="" class="materialboxed"width="300">
+            </div>
+            <div class="col s6 m6">
+                OBS画面中央下部のソース部分のプラスボタンを押下する。
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 m4">
+                <img src="img/obs2.png" data-caption="「ブラウザ」を選択" alt="obs2" srcset="" class="materialboxed"width="300">
+            </div>
+            <div class="col s6 m6">
+                でてきたメニューの「ブラウザ」を選択する。
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col s4 m4">
+                <img src="img/obs3.png" data-caption="新規作成でOKボタンを押下" alt="obs3" srcset="" class="materialboxed"width="300">
+            </div>
+            <div class="col s6 m6">
+                新規作成が選択されているのを確認し、適当な名前をつけてOKボタンを押下する。（名前はデフォルトのままでOKです）
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col s4 m4">
+                <img src="img/obs4.png" data-caption="ブラウザのプロパティ画面のURL欄に貼り付け" alt="obs4" srcset="" class="materialboxed"width="300">
+            </div>
+            <div class="col s6 m6">
+                ブラウザのプロパティ画面が表示されたら、上の共通背景でコピーしたURLを「URL」欄に貼り付ける。
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col s4 m4">
+                <img src="img/obs5.png" data-caption="幅には1280、高さには720を入力し、OKを押下" alt="obs5" srcset="" class="materialboxed"width="300">
+            </div>
+            <div class="col s6 m6">
+                画面の幅と高さを入力する。<span class="under" tooltip="どの画面サイズも共通です">幅には1280、高さには720を入力し</span>、OKを押下する。
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col s4 m4">
+                <img src="img/obs6.png" data-caption="再読み込みボタン押下" alt="obs6" srcset="" class="materialboxed"width="300">
+            </div>
+            <div class="col s6 m6">
+                追加したソースを選択すると再読み込みボタンが表示されるので、<p class=" light-blue-text darken-4" style="font-weight:bolder">配信開始前に必ず再読み込みボタンを押下する。</p>
+            </div>
+        </div> 
+
+    </div>
+
+</body>
+</html>

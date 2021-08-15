@@ -1,0 +1,334 @@
+html{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.gia1{
+    background-image:url("../img/gia1.png");
+    width:200px;
+    height: 200px;
+    margin-left:300px;
+    animation: rotate-anime 60s linear infinite;
+    animation-timing-function:ease;
+
+}
+
+.gia2{
+    background-image:url("../img/gia2.png");
+    width:133px;
+    height: 133px;
+    margin-left:350px;
+    animation: rotate-anime2 50s linear infinite;
+    animation-timing-function:ease;
+}
+.gia3{
+    background-image:url("../img/gia3.png");
+    width:214px;
+    height: 215px;
+    margin-left:1050px;
+    margin-top:120px;
+    animation: r-turn 60s linear infinite alternate;
+    animation-timing-function:ease;
+}
+.gia4{
+    background-image:url("../img/gia4.png");
+    width:218px;
+    height: 219px;
+    margin-top: -200px;
+    margin-left:300px;
+    animation: rotate-anime2 100s linear infinite;
+    animation-timing-function:ease;
+}
+
+@keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    100%  {transform: rotate(360deg);}
+  }
+
+@keyframes rotate-anime2 {
+    0%  {transform: rotate(0deg);}
+    100%  {transform: rotate(-360deg);}
+  }
+
+  @keyframes r-turn {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.main{
+    height:631px;
+    width:1280px;
+    display: inline;
+}
+
+.screenCol{
+    position: fixed;
+    top:20px;
+}
+
+.infoCol{
+    display:table;
+    margin-top:230px;
+}
+
+.nextGame{
+    height:89px;
+}
+
+.game{
+    width: 490px;
+    height: 100px;
+    top: 10px;
+    left: 400px;
+    position: absolute;
+    color: #FDF7DE;
+}
+
+
+.runner{
+    background-image: url("../img/runner.png");
+    width: 312px;
+    height: 71px;
+    margin-top:10px;
+    position: relative;
+
+}
+#commentator{
+    background-image: url("../img/commentator.png");
+    width: 312px;
+    height: 71px;
+    margin-top:10px;
+    position: relative;
+}
+
+#title{
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    padding: 5px;
+    font-weight: bold;
+    white-space: pre;
+    font-size:140%;
+    height: 30px;
+}
+.cateTime{
+    display: inline-flex;
+    margin-top: 15px;
+}
+.category{
+    height: 30px;
+    width: 300px;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.est{
+    height: 30px;
+    padding: 2px 15px;
+    font-weight: bold;
+    font-size: larger;
+}
+.info{
+    display: inline-flex;
+    margin-left: 63px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.twitch{
+    margin-top: 5px;
+    margin-right:10px;
+    width:29px;
+    height: 29px;
+    background-image: url("../img/tw.png");
+    background-repeat: no-repeat;
+}
+
+.youtube{
+    margin-top: 5px;
+    margin-right:10px;
+    width:28px;
+    height: 20px;
+    background-image: url("../img/yt.png");
+    background-repeat: no-repeat;
+}
+
+.nico{
+    margin-top: 5px;
+    margin-right:10px;
+    width:29px;
+    height: 31px;
+    background-image: url("../img/nc.png");
+    background-repeat: no-repeat;
+}
+
+.nn{
+    margin-left:63px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.nextGame{
+    left:20px;
+    top:625px;
+    color: #42210B;
+    position: fixed;
+    font-size:18px;
+    font-weight: bolder;
+    display: inline-flex;
+}
+.nextGameInfo {
+    width: 310px;
+}
+.under {
+    border-bottom: dotted 2px #42210B;
+  }
+/* START TOOLTIP STYLES */
+[tooltip] {
+    position: relative; /* opinion 1 */
+  }
+  
+  /* Applies to all tooltips */
+  [tooltip]::before,
+  [tooltip]::after {
+    text-transform: none; /* opinion 2 */
+    font-size: .9em; /* opinion 3 */
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+  }
+  [tooltip]::before {
+    content: '';
+    border: 5px solid transparent; /* opinion 4 */
+    z-index: 1001; /* absurdity 1 */
+  }
+  [tooltip]::after {
+    content: attr(tooltip); /* magic! */
+    
+    /* most of the rest of this is opinion */
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    
+    /* 
+      Let the content set the size of the tooltips 
+      but this will also keep them from being obnoxious
+      */
+    min-width: 3em;
+    max-width: 21em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1ch 1.5ch;
+    border-radius: .3ch;
+    box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+    background: #333;
+    color: #fff;
+    z-index: 1000; /* absurdity 2 */
+  }
+  
+  /* Make the tooltips respond to hover */
+  [tooltip]:hover::before,
+  [tooltip]:hover::after {
+    display: block;
+  }
+  
+  /* don't show empty tooltips */
+  [tooltip='']::before,
+  [tooltip='']::after {
+    display: none !important;
+  }
+  
+  /* FLOW: UP */
+  [tooltip]:not([flow])::before,
+  [tooltip][flow^="up"]::before {
+    bottom: 100%;
+    border-bottom-width: 0;
+    border-top-color: #333;
+  }
+  [tooltip]:not([flow])::after,
+  [tooltip][flow^="up"]::after {
+    bottom: calc(100% + 5px);
+  }
+  [tooltip]:not([flow])::before,
+  [tooltip]:not([flow])::after,
+  [tooltip][flow^="up"]::before,
+  [tooltip][flow^="up"]::after {
+    left: 50%;
+    transform: translate(-50%, -.5em);
+  }
+  
+  /* FLOW: DOWN */
+  [tooltip][flow^="down"]::before {
+    top: 100%;
+    border-top-width: 0;
+    border-bottom-color: #333;
+  }
+  [tooltip][flow^="down"]::after {
+    top: calc(100% + 5px);
+  }
+  [tooltip][flow^="down"]::before,
+  [tooltip][flow^="down"]::after {
+    left: 50%;
+    transform: translate(-50%, .5em);
+  }
+  
+  /* FLOW: LEFT */
+  [tooltip][flow^="left"]::before {
+    top: 50%;
+    border-right-width: 0;
+    border-left-color: #333;
+    left: calc(0em - 5px);
+    transform: translate(-.5em, -50%);
+  }
+  [tooltip][flow^="left"]::after {
+    top: 50%;
+    right: calc(100% + 5px);
+    transform: translate(-.5em, -50%);
+  }
+  
+  /* FLOW: RIGHT */
+  [tooltip][flow^="right"]::before {
+    top: 50%;
+    border-left-width: 0;
+    border-right-color: #333;
+    right: calc(0em - 5px);
+    transform: translate(.5em, -50%);
+  }
+  [tooltip][flow^="right"]::after {
+    top: 50%;
+    left: calc(100% + 5px);
+    transform: translate(.5em, -50%);
+  }
+  
+  /* KEYFRAMES */
+  @keyframes tooltips-vert {
+    to {
+      opacity: .9;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  @keyframes tooltips-horz {
+    to {
+      opacity: .9;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  /* FX All The Things */ 
+  [tooltip]:not([flow]):hover::before,
+  [tooltip]:not([flow]):hover::after,
+  [tooltip][flow^="up"]:hover::before,
+  [tooltip][flow^="up"]:hover::after,
+  [tooltip][flow^="down"]:hover::before,
+  [tooltip][flow^="down"]:hover::after {
+    animation: tooltips-vert 300ms ease-out forwards;
+  }
+  
+  [tooltip][flow^="left"]:hover::before,
+  [tooltip][flow^="left"]:hover::after,
+  [tooltip][flow^="right"]:hover::before,
+  [tooltip][flow^="right"]:hover::after {
+    animation: tooltips-horz 300ms ease-out forwards;
+  }
