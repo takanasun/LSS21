@@ -140,6 +140,17 @@ html{
     height: 29px;
     background-image: url("../img/tw.png");
     background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.twitter{
+  margin-top: 5px;
+  margin-right:10px;
+  width:29px;
+  height: 29px;
+  background-image: url("../img/tt.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .youtube{
@@ -149,6 +160,7 @@ html{
     height: 20px;
     background-image: url("../img/yt.png");
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .nico{
@@ -158,6 +170,7 @@ html{
     height: 31px;
     background-image: url("../img/nc.png");
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .nn{

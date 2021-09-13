@@ -8,11 +8,12 @@ $(function(){
             
             // HTML上の必要な箇所に値を設定します。
             const obj = ["title","cate","est","runName","runID","runIcon","comName","comID","comIcon","nextTitle","nextCategory","nextRunner","nextCommentator"];
-            const colNum = [1,2,5,8,9,10,11,12,13,14,15,16,17];
+            const colNum = [1,2,5,9,10,11,12,13,14,15,16,17,18];
             const iconImage = {
                 "youtube":"yt.png",
                 "twitch":"tw.png",
-                "nico":"nc.png"
+                "nico":"nc.png",
+                "twitter":"tt.png"
             };
             var textLength = data.split(",");
             $("#cate").text(textLength[0]);
