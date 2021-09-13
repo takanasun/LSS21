@@ -1,7 +1,8 @@
 $(function(){
     $.ajax({
         type: 'GET',
-        url:'https://script.google.com/macros/s/AKfycbxryaN13LIULoFFA19TK3ikXE2mbAzVWNc8dzprXs_oEhwEHkXIdM8vn5_uo9GIJ3juFA/exec',
+        url:'https://script.google.com/macros/s/AKfycbzfw017YzbVZV6sR163Ryedma-0yOQHIF-LtJ3tDxAvpcht8_M77LlwpaPHsp6zvAIWqA/exec',
+        
         dataType:"text",
         success: function(data){
             
