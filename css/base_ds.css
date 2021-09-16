@@ -5,3 +5,11 @@ body{
     width: 1280px;
     /*height: 720px;*/
 }
+
+body .r{
+    background-image: url("../img/bbase_ds_r.png") ;
+    background-repeat: no-repeat;
+    /*background-position: left top;*/
+    width: 1280px;
+    /*height: 720px;*/
+}
