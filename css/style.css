@@ -59,6 +59,10 @@ html{
     display: inline;
 }
 
+.runInfo{
+  margin-left:9px;
+}
+
 .screenCol{
     position: fixed;
     top:20px;
