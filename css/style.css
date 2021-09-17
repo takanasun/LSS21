@@ -63,6 +63,14 @@ html{
   margin-left:9px;
 }
 
+.freeSpace{
+  margin: 10px 6px;    
+  height: 130px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.52) 1%,rgba(255,255,255,0.8) 15%,rgba(255,255,255,1) 29%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,0.8) 85%,rgba(255,255,255,0.5) 99%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.52) 1%,rgba(255,255,255,0.8) 15%,rgba(255,255,255,1) 29%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,0.8) 85%,rgba(255,255,255,0.5) 99%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 .screenCol{
     position: fixed;
     top:20px;
