@@ -29,7 +29,11 @@ $(function(){
                 }else if(obj[i] == "comName" && textLength[colNum[i]].indexOf("/") < 1){
                     $(".freeSpace").css("height","210px");
                     $("#commentator2").css("display","none");
+                
+                }else if(obj[i] == "comName" && textLength[colNum[i]].indexOf("/") >= 1){
+                    $(".freeSpace").css("height","130px");
                 }
+
                 if(obj[i] == "comIcon" &&  textLength[colNum[i]].indexOf("/") >= 1){
                     var listIcon = textLength[colNum[i]].split("/");
                     for (let index = 0; index < listIcon.length; index++) {

@@ -111,6 +111,13 @@ html{
     position: relative;
 }
 
+#commentator2{
+  background-image: url("../img/commentator.png");
+  width: 312px;
+  height: 71px;
+  margin-top:10px;
+  position: relative;
+}
 #title{
     margin: 0 auto;
     overflow-wrap: break-word;
