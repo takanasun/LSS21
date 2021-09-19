@@ -38,6 +38,15 @@ html{
     animation: rotate-anime2 100s linear infinite;
     animation-timing-function:ease;
 }
+.gia5{
+    background-image:url("../img/gia5.png");
+    width:215px;
+    height: 215px;
+    margin-top: -500px;
+    margin-left:750px;
+    animation:  r-turn 80s linear infinite;
+    animation-timing-function:ease;
+}
 
 @keyframes rotate-anime {
     0%  {transform: rotate(0);}
