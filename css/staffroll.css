@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*-------------------
+	All
+-------------------*/
+
+#staffRoll {
+	margin-top: -300px;;
+	margin-left:580px;
+	height: 100%;
+	position: relative;
+}
+
+#staffRoll li {
+list-style-type: none;
+font-size: 150%;
+}
+
+#staffRoll .section {
+
+color: #ffffff;
+margin-bottom: 100px;
+width: 100%;
+display: table;
+}
+
+#staffRoll .section.whole {
+height: -300px;
+}
+
+#staffRoll .section.end {
+margin-bottom: 0;
+text-align: center;	
+}
+
+#staffRoll .wrap {
+display: table-cell;
+vertical-align: middle;
+}
+
+#staffRoll h2 {
+margin-bottom: 1em;
+font-size: 150%;
+}
+
+/*-------------------
+	type1
+-------------------*/
+.type1 .wrap {
+text-align: center;
+}
+
+/*-------------------
+	type2
+-------------------*/
+.type2 .section {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	opacity: 0;
+	}
+
