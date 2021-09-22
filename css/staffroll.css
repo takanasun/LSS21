@@ -5,15 +5,12 @@
 -------------------*/
 
 #staffRoll {
-	margin-top: -300px;;
-	margin-left:580px;
-	height: 100%;
 	position: relative;
 }
 
 #staffRoll li {
 list-style-type: none;
-font-size: 150%;
+font-size: 400%;
 }
 
 #staffRoll .section {
@@ -38,9 +35,16 @@ display: table-cell;
 vertical-align: middle;
 }
 
+
+#staffRoll h1 {
+	margin-bottom: 1em;
+	font-size: 250%;
+	}
+
+	
 #staffRoll h2 {
 margin-bottom: 1em;
-font-size: 150%;
+font-size: 200%;
 }
 
 /*-------------------

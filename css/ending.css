@@ -1,3 +1,7 @@
+html{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 body {
     background-image: url("../img/ending.png") ;
     background-repeat: no-repeat;
@@ -66,4 +70,10 @@ body {
   @keyframes r-turn {
 	0%   { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
+}
+
+.roll{
+    width: 550px;
+    height: 500px;
+    margin-left: 650px;
 }

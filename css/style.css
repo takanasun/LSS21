@@ -2,6 +2,66 @@ html{
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+.gia1{
+  background-image:url("../img/gia1.png");
+  width:200px;
+  height: 200px;
+  margin-left:300px;
+  animation: rotate-anime 60s linear infinite;
+  animation-timing-function:ease;
+
+}
+
+.gia2{
+  background-image:url("../img/gia2.png");
+  width:133px;
+  height: 133px;
+  margin-left:350px;
+  animation: rotate-anime2 50s linear infinite;
+  animation-timing-function:ease;
+}
+.gia3{
+  background-image:url("../img/gia3.png");
+  width:214px;
+  height: 215px;
+  margin-left:1050px;
+  margin-top:120px;
+  animation: r-turn 60s linear infinite alternate;
+  animation-timing-function:ease;
+}
+.gia4{
+  background-image:url("../img/gia4.png");
+  width:218px;
+  height: 219px;
+  margin-top: -200px;
+  margin-left:300px;
+  animation: rotate-anime2 100s linear infinite;
+  animation-timing-function:ease;
+}
+.gia5{
+  background-image:url("../img/gia5.png");
+  width:215px;
+  height: 215px;
+  margin-top: -500px;
+  margin-left:750px;
+  animation:  r-turn 80s linear infinite;
+  animation-timing-function:ease;
+}
+
+@keyframes rotate-anime {
+  0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
+}
+
+@keyframes rotate-anime2 {
+  0%  {transform: rotate(0deg);}
+  100%  {transform: rotate(-360deg);}
+}
+
+@keyframes r-turn {
+0%   { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
 .main{
     height:631px;
     width:1280px;
